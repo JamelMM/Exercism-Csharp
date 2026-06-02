@@ -19,3 +19,6 @@ I use each exercise to practice:
 - writing clear C# code
 - identifying reusable patterns
 - reflecting on common mistakes
+
+
+See [Exercism C# Exercise Index](EXERCISES.md) for a list of completed exercises and learning patterns.
