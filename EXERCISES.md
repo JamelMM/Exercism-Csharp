@@ -57,6 +57,31 @@ Practiced in:
 Pattern:
 Translate rules into boolean expressions using `&&`, `||`, and `!`.
 
+### Protecting internal collections
+
+Practiced in:
+- Authentication System
+
+Pattern:
+Keep mutable data private, and expose a readonly wrapper when external code should only be able to read it.
+
+Key idea:
+`readonly` prevents a field from being reassigned, but it does not make the contents of a mutable collection immutable.
+
+Example:
+A `Dictionary` can be stored internally, but returned as a `ReadOnlyDictionary` to prevent outside code from changing its entries.
+
+### Constants for fixed values
+
+Practiced in:
+- Authentication System
+
+Pattern:
+Use `const` for values that are fixed and known at compile time.
+
+Example:
+Fixed values like allowed eye colors can be represented as constants.
+
 ## Notes
 
 The goal of this repository is not only to store solutions, but to track my progress in C#, problem solving, and algorithmic thinking.
