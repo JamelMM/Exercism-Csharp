@@ -13,6 +13,7 @@ This file tracks my completed Exercism C# exercises and the main concept practic
 | 5 | Secure Manchester United | Interfaces, inheritance, and type checks | Check specific types before general parent types |
 | 6 | Squeaky Clean | Strings, chars, and text transformation | Iterate over text and build a cleaned result |
 | 7 | Jedlik's Toys | Classes, object state, and instance methods | Store state in fields and update it through methods |
+| 8 | Authentication System | Constants, defensive copying, and readonly collections | Protect internal data by returning readonly wrappers |
 
 ## Learning Patterns
 
