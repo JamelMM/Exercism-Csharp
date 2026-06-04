@@ -14,6 +14,7 @@ This file tracks my completed Exercism C# exercises and the main concept practic
 | 6 | Squeaky Clean | Strings, chars, and text transformation | Iterate over text and build a cleaned result |
 | 7 | Jedlik's Toys | Classes, object state, and instance methods | Store state in fields and update it through methods |
 | 8 | Authentication System | Constants, defensive copying, and readonly collections | Protect internal data by returning readonly wrappers |
+| 9 | Need for Speed | Object state, encapsulation, and loops | Simulate repeated actions until a goal is reached |
 
 ## Learning Patterns
 
@@ -78,6 +79,17 @@ Practiced in:
 
 Pattern:
 Use `const` for values that are fixed and known at compile time.
+
+### Simulating repeated actions
+
+Practiced in:
+- Need for Speed
+
+Pattern:
+While an object can still continue, perform one action, then check whether the goal has been reached.
+
+Example idea:
+A car repeatedly drives while its battery is not drained. After each drive, check whether it has reached the track distance.
 
 Example:
 Fixed values like allowed eye colors can be represented as constants.
