@@ -15,6 +15,7 @@ This file tracks my completed Exercism C# exercises and the main concept practic
 | 7 | Jedlik's Toys | Classes, object state, and instance methods | Store state in fields and update it through methods |
 | 8 | Authentication System | Constants, defensive copying, and readonly collections | Protect internal data by returning readonly wrappers |
 | 9 | Need for Speed | Object state, encapsulation, and loops | Simulate repeated actions until a goal is reached |
+| 10 | Booking Up for Beauty | DateTime parsing and time comparisons | Use DateTime properties and comparisons to model time-based rules |
 
 ## Learning Patterns
 
@@ -93,6 +94,17 @@ A car repeatedly drives while its battery is not drained. After each drive, chec
 
 Example:
 Fixed values like allowed eye colors can be represented as constants.
+### Date and time rules
+
+Practiced in:
+- Booking Up for Beauty
+
+Pattern:
+Use `DateTime.Parse`, `DateTime.Now`, and properties like `.Hour` or `.Year` to model rules based on dates and times.
+
+Common mistake:
+`new DateTime()` does not mean "now"; it creates the default date value.
+
 
 ## Notes
 
