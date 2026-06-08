@@ -16,6 +16,7 @@ This file tracks my completed Exercism C# exercises and the main concept practic
 | 8 | Authentication System | Constants, defensive copying, and readonly collections | Protect internal data by returning readonly wrappers |
 | 9 | Need for Speed | Object state, encapsulation, and loops | Simulate repeated actions until a goal is reached |
 | 10 | Booking Up for Beauty | DateTime parsing and time comparisons | Use DateTime properties and comparisons to model time-based rules |
+| 11 | International Calling Connoisseur | Dictionaries and key-value pairs | Store values by key and safely read, update, remove, and iterate entries |
 
 ## Learning Patterns
 
@@ -105,6 +106,23 @@ Use `DateTime.Parse`, `DateTime.Now`, and properties like `.Hour` or `.Year` to 
 Common mistake:
 `new DateTime()` does not mean "now"; it creates the default date value.
 
+### Dictionary lookup and updates
+
+Practiced in:
+- International Calling Connoisseur
+
+Pattern:
+Use a dictionary when values should be accessed through unique keys.
+
+Key operations:
+- `Add(key, value)` to insert a new entry
+- `ContainsKey(key)` to check whether a key exists
+- `dictionary[key]` to read or update an existing value
+- `Remove(key)` to delete an entry
+- `foreach` with `KeyValuePair<TKey, TValue>` to iterate over entries
+
+Common mistake:
+A dictionary is not indexed by position. `dictionary[i]` searches for the key `i`.
 
 ## Notes
 
