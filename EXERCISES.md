@@ -17,6 +17,7 @@ This file tracks my completed Exercism C# exercises and the main concept practic
 | 9 | Need for Speed | Object state, encapsulation, and loops | Simulate repeated actions until a goal is reached |
 | 10 | Booking Up for Beauty | DateTime parsing and time comparisons | Use DateTime properties and comparisons to model time-based rules |
 | 11 | International Calling Connoisseur | Dictionaries and key-value pairs | Store values by key and safely read, update, remove, and iterate entries |
+| 12 | Logs, Logs, Logs | Enums, string parsing, and switch statements | Extract a code from text and map it to a typed enum value |
 
 ## Learning Patterns
 
@@ -123,6 +124,29 @@ Key operations:
 
 Common mistake:
 A dictionary is not indexed by position. `dictionary[i]` searches for the key `i`.
+
+### Parsing text into enum values
+
+Practiced in:
+- Logs, Logs, Logs
+
+Pattern:
+Extract the relevant part of a string, then use a `switch` to convert it into a strongly typed enum value.
+
+Key ideas:
+- `enum` represents a fixed set of possible values
+- `IndexOf` finds character positions
+- `Substring` extracts part of a string
+- `switch` maps text codes to enum members
+
+Substring formula:
+```csharp
+text.Substring(start + 1, end - start - 1)
+```
+**Use it when extracting text between two delimiters.**
+
+Common mistake:
+An enum does not store string values. The parsing logic belongs in a method.
 
 ## Notes
 
