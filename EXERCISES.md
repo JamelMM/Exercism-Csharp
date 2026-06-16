@@ -18,6 +18,7 @@ This file tracks my completed Exercism C# exercises and the main concept practic
 | 10 | Booking Up for Beauty | DateTime parsing and time comparisons | Use DateTime properties and comparisons to model time-based rules |
 | 11 | International Calling Connoisseur | Dictionaries and key-value pairs | Store values by key and safely read, update, remove, and iterate entries |
 | 12 | Logs, Logs, Logs | Enums, string parsing, and switch statements | Extract a code from text and map it to a typed enum value |
+| 13 | Face ID 2.0 | Equality, hash codes, and reference comparison | Override Equals/GetHashCode for value equality and use ReferenceEquals for object identity |
 
 ## Learning Patterns
 
@@ -148,6 +149,23 @@ text.Substring(start + 1, end - start - 1)
 Common mistake:
 An enum does not store string values. The parsing logic belongs in a method.
 
+### Value equality vs reference equality
+
+Practiced in:
+- Face ID 2.0
+
+Pattern:
+Use `Equals` to define logical equality for a class, and use `ReferenceEquals` when you need to know whether two variables point to the exact same object.
+
+Key ideas:
+- classes compare by reference by default
+- `Equals` can be overridden to compare values
+- `GetHashCode` should be overridden when `Equals` is overridden
+- fields used in `Equals` should also be used in `GetHashCode`
+- `ReferenceEquals(a, b)` checks object identity, not value equality
+
+Common mistake:
+Overriding `Equals` without also overriding `GetHashCode`, which can cause incorrect behavior in `Dictionary` or `HashSet`.
 ## Notes
 
 The goal of this repository is not only to store solutions, but to track my progress in C#, problem solving, and algorithmic thinking.
