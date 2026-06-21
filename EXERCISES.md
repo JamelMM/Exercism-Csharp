@@ -19,6 +19,7 @@ This file tracks my completed Exercism C# exercises and the main concept practic
 | 11 | International Calling Connoisseur | Dictionaries and key-value pairs | Store values by key and safely read, update, remove, and iterate entries |
 | 12 | Logs, Logs, Logs | Enums, string parsing, and switch statements | Extract a code from text and map it to a typed enum value |
 | 13 | Face ID 2.0 | Equality, hash codes, and reference comparison | Override Equals/GetHashCode for value equality and use ReferenceEquals for object identity |
+| 14 | Simple Calculator | Exceptions and input validation | Validate inputs first, then execute the requested operation |
 
 ## Learning Patterns
 
@@ -166,6 +167,21 @@ Key ideas:
 
 Common mistake:
 Overriding `Equals` without also overriding `GetHashCode`, which can cause incorrect behavior in `Dictionary` or `HashSet`.
+
+### Input validation with exceptions
+
+Practiced in:
+- Simple Calculator
+
+Pattern:
+Validate inputs at the beginning of a method and throw an appropriate exception when the method cannot continue.
+
+Key ideas:
+- `ArgumentNullException` for `null`
+- `ArgumentException` for an invalid general argument
+- `ArgumentOutOfRangeException` for unsupported values
+- guard conditions keep the main logic easier to follow
+
 ## Notes
 
 The goal of this repository is not only to store solutions, but to track my progress in C#, problem solving, and algorithmic thinking.
