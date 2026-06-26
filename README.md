@@ -1,4 +1,4 @@
-# Exercism Learning Log
+# Exercism-C#
 
 This repository tracks my progress through Exercism.
 
